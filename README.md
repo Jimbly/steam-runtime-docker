@@ -19,7 +19,7 @@ Prerequisites - Windows
 * Install Docker Toolbox
 * * If you already have Git/Bash and VirtualBox installed, you can skip those steps
 * * * You'll probably need to fix the "Docker Quickstart Terminal" shortcut to point to where you have Git/Bash installed
-* Linux host (or VM) only needed if you need to re-generate steamrt-precise-base
+* Linux host (or VM) only needed if you want to re-generate steamrt-precise-base
 
 If you want to resize the VM disk to more than the default 20GB (it auto-grows to this limit, it won't actually take 100gb if you set the max to 100gb), open Docker Quickstart Terminal.
 * A steamrt image takes around 1.7GB, I easily used 20GB while debugging Docker containers, but only end up using about 5GB (including Docker's internal stuff) to just build the example Dockerfile
