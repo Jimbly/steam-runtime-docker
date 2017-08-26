@@ -37,4 +37,4 @@ To actually use these images, open your favorite terminal to the example/ folder
 * `docker run -it --rm -v /C/:/C steamrt-example bash`
 * You should then be able to navigate to any folder, and starting doing builds. Any changes you make (outside of to /C, which is simply mounted) are discarded when you exit your session, if you want to make configuration changes, edit _Dockerfile_ and re-build the image.
 * To build something non-interactively from Windows, (e.g. in a Visual Studio build step):
-** `docker run -i --rm -v /C/:/C steamrt-example bash -c "mkdir -p /C/SRC/MyProject/build/ && cd /C/SRC/MyProject/build && cmake .. && make"`
+* * `docker run -i --rm -v /C/:/C steamrt-example bash -c "mkdir -p /C/SRC/MyProject/build/ && cd /C/SRC/MyProject/build && cmake .. && make"`
