@@ -1,7 +1,7 @@
 steam-runtime-docker
 ====================
 
-Docker images with the 32-bit Linux runtime environment built by 
+[Docker images](https://hub.docker.com/u/jimbly/) with the 32-bit Linux runtime environment built by 
 https://github.com/ValveSoftware/steam-runtime.  These are intended to be used
 to make Linux builds for Steam games on a Windows host.
 
