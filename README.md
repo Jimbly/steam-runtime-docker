@@ -7,14 +7,16 @@ to make Linux builds for Steam games on a Windows host.
 
 *Note: I'm only using the _GCC_ version myself, CLANG versions are untested*
 
-Sources Images
-* jimbly/steamrt-precise-base - just barebones Ubuntu 12.04 sourced from the Steam repo
-* [steamrt-i386-gcc/README.md] jimbly/steamrt-i386-gcc
-* [steamrt-precise-base/README.md] jimbly/steamrt-precise-base
+Sources Dockerfiles
+* [jimbly/steamrt-precise-base](steamrt-precise-base/README.md) - just barebones Ubuntu 12.04 sourced from the Steam repo
+* [jimbly/steamrt-i386](steamrt-i386-gcc/Dockerfile) - steamrt and build-essentials added in (used by all below)
+* [jimbly/steamrt-i386-gcc](steamrt-i386-gcc/Dockerfile) GCC 4.8
+* [jimbly/steamrt-i386-clang-3.4](steamrt-i386-clang-3.4/Dockerfile) CLANG 3.4
+* [jimbly/steamrt-i386-clang-3.6](steamrt-i386-clang-3.6/Dockerfile) CLANG 3.6
 
 Prerequisites:
 * Windows host
-** Latest Docker not recommended because it breaks the ability to run any other VMs on your system -_-, so, Docker Toolbox instead (though this should all be able to be made to work on vanilla Docker)
+** Latest Docker not recommended because it breaks the ability to run any other VMs on your system :(, so, [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) instead (though this should all be able to be made to work on vanilla Docker)
 ** Install Docker Toolbox
 *** If you already have Git/Bash and VirtualBox installed, you can skip those steps
 **** You'll probably need to fix the "Docker Quickstart Terminal" shortcut to point to where you have Git/Bash installed
