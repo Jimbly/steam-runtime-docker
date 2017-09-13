@@ -8,7 +8,7 @@ to make Linux builds for Steam games on a Windows host.
 *Note: I'm only using the _GCC_ version myself, CLANG versions are untested*
 
 Sources Dockerfiles
-* [jimbly/steamrt-precise-base](steamrt-precise-base/README.md) - just barebones Ubuntu 12.04 sourced from the Steam repo
+* [jimbly/steamrt-precise-base](steamrt-precise-base/) - just barebones Ubuntu 12.04 sourced from the Steam repo
 * [jimbly/steamrt-i386](steamrt-i386-gcc/Dockerfile) - steamrt and build-essentials added in (used by all below)
 * [jimbly/steamrt-i386-gcc](steamrt-i386-gcc/Dockerfile) GCC 4.8
 * [jimbly/steamrt-i386-clang-3.4](steamrt-i386-clang-3.4/Dockerfile) CLANG 3.4
