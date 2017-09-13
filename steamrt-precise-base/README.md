@@ -11,6 +11,7 @@ Prerequisites:
 
 On a linux host:
 * Run `setup_chroot_minimal.sh --i386` to generate precise_i386.tgz
+* Run `setup_chroot_minimal.sh --amd64` to generate precise_amd64.tgz
 
 On Windows...
 
@@ -24,6 +25,7 @@ In Docker Quickstart Terminal, if you want to resize the VM to more than 20GB
 Open your favorite terminal to this folder
 * `docker-machine.exe env --shell=cmd default` - get these variables into your environment via copy and paste or following the instructions
 * `docker import X:\precise_i386.tgz jimbly/steamrt-precise-base`
+* `docker import X:\precise_amd64.tgz jimbly/steamrt-precise-amd64-base`
 
 Links
 =====

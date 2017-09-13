@@ -1,18 +1,25 @@
 steam-runtime-docker
 ====================
 
-[Docker images](https://hub.docker.com/u/jimbly/) with the 32-bit Linux runtime environment built by 
-https://github.com/ValveSoftware/steam-runtime.  These are intended to be used
-to make Linux builds for Steam games on a Windows host.
+[Docker images](https://hub.docker.com/u/jimbly/) with the 32-bit and 64-bit Linux
+runtime environments built by https://github.com/ValveSoftware/steam-runtime.
+These are intended to be used to make Linux builds for Steam games on a Windows host.
 
 *Note: I'm only using the _GCC_ version myself, CLANG versions are untested*
 
 Sources Dockerfiles
-* [jimbly/steamrt-precise-base](steamrt-precise-base/) - just barebones Ubuntu 12.04 sourced from the Steam repo
-* [jimbly/steamrt-i386](steamrt-i386-gcc/Dockerfile) - steamrt and build-essentials added in (used by all below)
-* [jimbly/steamrt-i386-gcc](steamrt-i386-gcc/Dockerfile) GCC 4.8
-* [jimbly/steamrt-i386-clang-3.4](steamrt-i386-clang-3.4/Dockerfile) CLANG 3.4
-* [jimbly/steamrt-i386-clang-3.6](steamrt-i386-clang-3.6/Dockerfile) CLANG 3.6
+* 32-bit (makes builds that run on anything that can run Steam)
+* * [jimbly/steamrt-precise-base](steamrt-precise-base/) - just barebones Ubuntu 12.04 sourced from the Steam repo
+* * [jimbly/steamrt-i386](steamrt-i386-gcc/Dockerfile) - steamrt and build-essentials added in (used by all below)
+* * [jimbly/steamrt-i386-gcc](steamrt-i386-gcc/Dockerfile) GCC 4.8
+* * [jimbly/steamrt-i386-clang-3.4](steamrt-i386-clang-3.4/Dockerfile) CLANG 3.4
+* * [jimbly/steamrt-i386-clang-3.6](steamrt-i386-clang-3.6/Dockerfile) CLANG 3.6
+* 64-bit (included for completeness, useful for tools)
+* * [jimbly/steamrt-precise-amd64-base](steamrt-precise-base/) - just barebones Ubuntu 12.04 sourced from the Steam repo
+* * [jimbly/steamrt-amd64](steamrt-amd64-gcc/Dockerfile) - steamrt and build-essentials added in (used by all below)
+* * [jimbly/steamrt-amd64-gcc](steamrt-amd64-gcc/Dockerfile) GCC 4.8
+* * [jimbly/steamrt-amd64-clang-3.4](steamrt-amd64-clang-3.4/Dockerfile) CLANG 3.4
+* * [jimbly/steamrt-amd64-clang-3.6](steamrt-amd64-clang-3.6/Dockerfile) CLANG 3.6
 
 Prerequisites - Windows
 * Latest Docker not recommended because it breaks the ability to run any other VMs on your system :(, so, [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/) instead (though this should all be able to be made to work on vanilla Docker, the setup steps will be different)

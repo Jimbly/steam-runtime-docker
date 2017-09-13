@@ -113,7 +113,7 @@ build_chroot()
 
 	### create a tar archive from the chroot directory
 	sudo tar cfz ~/${CHROOT_NAME}.tgz -C ${CHROOT_DIR}/${CHROOT_NAME} .	
-	echo Import with \"docker import ~/${CHROOT_NAME}.tgz 32bit/precise\"
+	echo Import with \"docker import ~/${CHROOT_NAME}.tgz steamrt-precise-(amd64-)base\"
 }
 
 configure_chroot()
