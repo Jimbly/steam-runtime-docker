@@ -18,7 +18,7 @@ prebuild_chroot()
 {
 	# install some packages
 	echo -e "\n${COLOR_ON}Installing debootstrap schroot...${COLOR_OFF}"
-	sudo -E apt-get install -y debootstrap schroot
+	which debootstrap && which schroot || sudo -E apt-get install -y debootstrap schroot
 
 	# Check if there are any active schroot sessions right now and warn if so...
 	schroot_list=$(schroot --list --all-sessions | head -n 1)
