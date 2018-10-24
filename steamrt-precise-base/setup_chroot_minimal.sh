@@ -104,7 +104,7 @@ build_chroot()
 	TMPNAME="${SCRIPTNAME%.*}-$$.sh"
 	cp -f "$0" "/tmp/${TMPNAME}"
 	chmod +x "/tmp/${TMPNAME}"
-	schroot --chroot ${CHROOT_NAME} -d /tmp --user root -- "/tmp/${TMPNAME}" ${BETA_ARG} --configure
+	sudo schroot --chroot ${CHROOT_NAME} -d /tmp --user root -- "/tmp/${TMPNAME}" ${BETA_ARG} --configure
 	rm -f "/tmp/${TMPNAME}"
 	
 	# Clean up and make file for docker
