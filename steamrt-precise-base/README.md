@@ -29,5 +29,6 @@ Open your favorite terminal to this folder
 
 Links
 =====
-* [This image on Docker Hub](https://hub.docker.com/r/jimbly/steamrt-precise-base/)
+* [steamrt-precise-base on Docker Hub](https://hub.docker.com/r/jimbly/steamrt-precise-base/)
+* [steamrt-precise-amd64-base on Docker Hub](https://hub.docker.com/r/jimbly/steamrt-precise-amd64-base/)
 * https://github.com/ValveSoftware/steam-runtime
